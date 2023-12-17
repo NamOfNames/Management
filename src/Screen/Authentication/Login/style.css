@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.buttonLogin {
+    color: var(--white);
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    
+}
+.formLogin input {
+    width: 50vw;
+    height: 50px;
+    border-radius: 10px;
+} 
+.formLogin button {
+    width: 20vw;
+    height: 40px;
+    border-radius: 10px;
+} 
+.formLogin * {
+    margin-bottom: 10px;
+}
