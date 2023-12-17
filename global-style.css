@@ -1,9 +1,21 @@
 :root {
-  --purple-color: #6c63ff;
+    --purpel: #6C63FF;
+    --white: #fff;
+    --black: #000;
+    --Lavender-Gray: #C3C1E5;
+    --main-color:#92e0d3;
+    --phu-color:#b8fbfb;
 }
 
 * {
   font-family: "Kanit", sans-serif;
+  list-style: none;
+
+}
+
+a{
+  color: var(--black) !important;
+  text-decoration: none !important; 
 }
 
 .container {
@@ -15,8 +27,7 @@
 
 header {
   text-align: center;
-  width: 80%;
-  margin: 50px 0;
+  /* width: 80%; */
 }
 
 .warp_search {
@@ -51,3 +62,10 @@ footer {
   background-color: black;
   color: white;
 }
+input {
+  padding: 10px;
+  border: 1px solid #999;
+  height: 48px;
+  outline: var(--Lavender-Gray);
+}
+

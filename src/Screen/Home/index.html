@@ -1,35 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Link css -->
-    <link rel="stylesheet" href="../../../global-style.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- Link font awesome -->
-    <script
-      src="https://kit.fontawesome.com/20d71f8f30.js"
-      crossorigin="anonymous"
-    ></script>
 
-    <!-- Link font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Title -->
-    <title>Container</title>
-  </head>
-  <body>
-    <script type="module" src="main.js"></script>
-    <script type="module" src="../../../global-main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link css -->
+  <link rel="stylesheet" href="../../../global-style.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Link font awesome -->
+  <script src="https://kit.fontawesome.com/20d71f8f30.js" crossorigin="anonymous"></script>
+  <!-- Link icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <!-- Link font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- Title -->
+  <title>Container</title>
+</head>
+
+<body>
+  <header>
+    <div class="head">
+      <div class="icon-home">
+        <i class="fa-solid fa-house"></i>
+      </div>
+      <div class="sreach-bar">
+        <input type="" placeholder="Nhập tên sách bạn muốn tìm..." class="sreach">
+        <div class="icon-sreach">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+      <div class="Lo/Re">
+        <a href="#"><i class="fa-solid fa-user"></i> Login</a> /
+        <a href="#">Register <i class="fa-solid fa-user"></i></a>
+      </div>
+    </div>
+    <div class="p1">
+      <h1>Tên</h1>
+      <div class="command">
+        <div class="shortcommand lenh"><a href="#">Product</a></div>
+        <div class="shortcommand lenh"><a href="#">News</a></div>
+        <div class="longcommand lenh"><a href="#">Contact us</a></div>
+        <div class="longcommand lenh"><a href="#">About us</a></div>
+      </div>
+    </div>
+  </header>
+  <!-- <div class="slide-img">
+      <img src="../../../assets/imgs/imgblog.jpg" alt="">
+    </div> -->
+  <div class="hot-book">
+    <h3>One of the most popular books</h3>
+    <div class="list-3-top">
+      <div class="top2">
+        <img src="../../../assets/imgs/imgblog.jpg" alt="" class="img">
+        <h4 class="text-top2 text-top">Top 2</h4>
+        <div class="describe-top2">
+
+        </div>
+      </div>
+      <div class="top1">
+        <img src="#" alt="" class="img">
+        <h4 class="text-top">Top 1</h4>
+      </div>
+      <div class="top3">
+        <img src="#" alt="" class="img">
+        <h4 class="text-top3 text-top">Top 3</h4>
+      </div>
+    </div>
+  </div>
+  <div class="new-product">
+    <h3>New Books</h3>
+    <div class="list-newbooks">
+      <div class="prd1">
+        <img src="../../../assets/imgs/imgblog.jpg" alt="" class="img-prd">
+        <h5>name prd</h5>
+      </div>
+      <div class="prd2">
+        <img src="../../../assets/imgs/imgblog.jpg" alt="" class="img-prd">
+        <h5>name prd</h5>
+      </div>
+      <div class="prd3">
+        <img src="../../../assets/imgs/imgblog.jpg" alt="" class="img-prd">
+        <h5>name prd</h5>
+      </div>
+      <div class="prd4">
+        <img src="../../../assets/imgs/imgblog.jpg" alt="" class="img-prd">
+        <h5>name prd</h5>
+      </div>
+      <div class="prd5">
+        <img src="../../../assets/imgs/imgblog.jpg" alt="" class="img-prd">
+        <h5>name prd</h5>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="main.js"></script>
+  <script type="module" src="../../../global-main.js"></script>
+</body>
+
 </html>
