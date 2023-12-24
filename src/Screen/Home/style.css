@@ -67,7 +67,7 @@ header{
 .img{
     height: 250px;
     width: 175px;
-    border: 1px black solid;
+
 }
 .text-top{
     margin-left: 65px;
@@ -103,11 +103,12 @@ header{
 .img-prd{
     height: 250px;
     width: 175px;
-    border: 1px black solid;
+
 }
 .prd1 h5{
     margin-top: 10px;
     margin-left: 46px;
+    cursor: pointer;
 }
 .img-prd:hover{
     transform: scale(0.9);
@@ -120,16 +121,48 @@ header{
 .prd2 h5{
     margin-top: 10px;
     margin-left: 46px;
+    cursor: pointer;
 }
 .prd3 h5{
     margin-top: 10px;
     margin-left: 46px;
+    cursor: pointer;
 }
 .prd4 h5{
     margin-top: 10px;
     margin-left: 46px;
+    cursor: pointer;
 }
 .prd5 h5{
     margin-top: 10px;
     margin-left: 46px;
+    cursor: pointer;
+}
+.cheap-product h3{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.list-cheapbooks{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+#see-more{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    width: 100%;
+    height: 400px;
+}
+footer img{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    filter: brightness(50%);
+}
+footer p{
+    position: absolute;
+    top:-60px
 }

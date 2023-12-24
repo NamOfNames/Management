@@ -55,7 +55,7 @@ select {
 }
 
 footer {
-  width: 80%;
+  margin-top: 50px;
 }
 
 .dark-mode {
