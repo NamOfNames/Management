@@ -25,7 +25,7 @@ const analytics = getAnalytics(app);
 
 const dbrt = getDatabase(app);
 const refDb = ref(dbrt)
-const form = document.querySelector(".form_info")
+const form = document.querySelector(".formLogin")
 const btnGetUserid = document.querySelector(".get_user_by_id")
 form.addEventListener("submit", (e) => {
   e.preventDefault()
@@ -66,5 +66,7 @@ const readUserData = async () => {
     console.log(error)
   }
 }
-inputSearch
+
 readUserData()
+
+export { app }
