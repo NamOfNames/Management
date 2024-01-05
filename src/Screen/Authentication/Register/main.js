@@ -1,5 +1,5 @@
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
-import { app } from "../../../../main.js"
+import { app } from "../../../../global-main.js"
 
 
 const eventFormLogin = document.querySelector(".formLogin")
