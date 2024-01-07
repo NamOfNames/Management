@@ -33,8 +33,10 @@ eventFormLogin.addEventListener("submit", (event) => {
     signInWithEmailAndPassword(auth, inputEmail.value, inputPassword.value)
       .then((userCredential) => {
         //   console.log(userCredential.accessToken);
-        //   localStorage.setItem("accessToken", JSON.stringify(user.accessToken));
+        const user = userCredential.user;
   
+        localStorage.setItem("accessToken", JSON.stringify(user.accessToken));
+        localStorage.setItem("activeEmail", inputEmail.value);
         window.location.href = "../../Home/index.html";
       })
       .catch((error) => console.log(error));

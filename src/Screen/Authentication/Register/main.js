@@ -21,6 +21,7 @@ eventFormLogin.addEventListener("submit", (event) => {
           console.log(user);
   
           localStorage.setItem("accessToken", JSON.stringify(user.accessToken));
+          window.location.replace("../Login/index.html");
           
         })
         .catch((error) => {
