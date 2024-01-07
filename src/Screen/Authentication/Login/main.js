@@ -1,4 +1,4 @@
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 import { app } from "../../../../main.js"
 
 
@@ -33,8 +33,10 @@ eventFormLogin.addEventListener("submit", (event) => {
     signInWithEmailAndPassword(auth, inputEmail.value, inputPassword.value)
       .then((userCredential) => {
         //   console.log(userCredential.accessToken);
-        //   localStorage.setItem("accessToken", JSON.stringify(user.accessToken));
+        const user = userCredential.user;
   
+        localStorage.setItem("accessToken", JSON.stringify(user.accessToken));
+        localStorage.setItem("activeEmail", inputEmail.value);
         window.location.href = "../../Home/index.html";
       })
       .catch((error) => console.log(error));
