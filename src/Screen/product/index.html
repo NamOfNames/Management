@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link css -->
+    <link rel="stylesheet" href="../../../global-style.css" />
+    <link rel="stylesheet" href="../Home/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Link font awesome -->
+    <script src="https://kit.fontawesome.com/20d71f8f30.js" crossorigin="anonymous"></script>
+    <!-- Link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira"
+        rel="stylesheet">
+    <!-- Title -->
+    <title>Product</title>
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="icon-home">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="sreach-bar">
+                <input type="" placeholder="Nhập tên sách bạn muốn tìm..." class="sreach">
+                <div class="icon-sreach">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="icon-shopping">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="Lo/Re">
+                <a href="#"><i class="fa-solid fa-user"></i> Login</a> /
+                <a href="#">Register <i class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
+        <div class="p1">
+            <h1>Tên</h1>
+            <div class="command">
+                <div class="shortcommand lenh"><a href="#">Product</a></div>
+                <div class="shortcommand lenh"><a href="#">News</a></div>
+                <div class="longcommand lenh"><a href="#">Contact us</a></div>
+                <div class="longcommand lenh"><a href="#">About us</a></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="present">
+        <div>
+            <img src="../../../assets/imgs/download.jpg" class="img-product">
+        </div>
+        <!-- Brief introduction -->
+        <div class="book-description">
+            <p>Nhân chả giò gồm tôm tươi, thịt heo, nấm mèo, bún tàu, gia vị. được cuốn bằng bánh tráng gạo mỏng giòn,
+                bánh
+                tráng gạo. Để đảm bảo chất lượng Chả giò được cuốn mỗi ngày nên nhân tươi mới, thơm ngon, vị vừa ăn.</p>
+            <br>
+            -------------------------------------------------------------
+            <br>
+            <h5>INFORMATION ABOUT BOOK</h5>
+            <p>Name of book: </p>
+            <p>Author: </p>
+            <p>Summary content: </p>
+            <p>Genre of books: </p>
+            <p>Price: </p>
+            <div class="add-to-cart">
+                <div class="quantity">
+                    <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                    <input type="text" value="1">
+                    <span class="up" onClick='increaseCount(event, this)'>+</span>
+                </div>
+                <button class="btn-add"><i class="fa-solid fa-cart-shopping icon-before"></i> ADD TO CART</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <footer>
+
+        <img src="../../../assets/imgs/5963.webp" alt="">
+        <h4>Liên hệ</h4>
+        <p class="sđt">SĐT: </p>
+
+        <p class="email"> EMAIL: </p>
+
+        <p class="address">ĐỊA CHỈ: </p>
+
+    </footer>
+    <script src="main.js"></script>
