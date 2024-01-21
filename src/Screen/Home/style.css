@@ -26,6 +26,7 @@ header {
   transform: scale(1.1);
   color: lightsteelblue;
 }
+
 .longcommand {
   width: 120px;
   height: 30px;
@@ -119,9 +120,16 @@ header {
   transform: scale(0.9);
 }
 .list-newbooks {
-  margin-top: 20px;
-  display: flex;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
   justify-content: space-around;
+}
+
+.containerCardProduct{
+  margin: 30px;
+  
 }
 .prd2 h5 {
   margin-top: 10px;
@@ -210,11 +218,17 @@ footer h4 {
   margin-left: 20px;
   margin-top: 50px;
 }
-.book-description {
-  width: 100%;
-  height: 450px;
+
+.containerBtn {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+}
+.book-description{
+    width: 900px;
+    height: 450px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 .btn-add {
   font-family: "Patrick Hand", cursive;
@@ -233,26 +247,9 @@ footer h4 {
   display: flex;
   flex-direction: row;
 }
-.add-to-cart {
-  display: flex;
-  align-items: center;
-}
-.add-to-cart input {
-  width: 50px;
-  border: 0;
-  line-height: 30px;
-  font-size: 20px;
-  text-align: center;
-  background: var(--white);
-  color: var(--black);
-  appearance: none;
-  outline: 0;
-}
-.add-to-cart span {
 
-  font-size: 25px;
-  padding: 0 10px;
-  cursor: pointer;
-  color: #0052cc;
-  user-select: none;
+
+.numbercart {
+  background-color: red;
+  border-radius: 50px;
 }

@@ -1,15 +1,15 @@
-import { set, ref, get,child } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
-import { refDb, dbrt } from "../../../main.js";
+import { set, ref, get,child, remove } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+import { refDb, dbrt } from "../../../../main.js";
 
 const addfav = document.querySelector(".addfav")
 const addcart = document.querySelector(".addcart")
 
-const listNewwork2 = document.querySelector(".list-newbooks-1");
+const listNewwork2 = document.querySelector(".favcontent");
 
 // viết get list từ firebase đi 
 
 const getListProduct = async () => {
-   const snapshot  = await get(child(refDb, "Books"));
+   const snapshot  = await get(child(refDb, "Favorites"));
    if (snapshot.exists()) {
        const data = snapshot.val();
         const value = Object.values(data)
@@ -26,7 +26,7 @@ const getListProduct = async () => {
             descriptionProduct.innerText = item.description
             
 
-            btnFavorite.innerText = "Add To Favorite"
+            btnFavorite.innerText = "Delete"
             btnAddToCard.innerText = 'Add To Cart'
 
             containerCardProduct.classList.add("containerCardProduct")
@@ -44,18 +44,12 @@ const getListProduct = async () => {
 
             btnFavorite.addEventListener("click", () => {
                 // add vào firebase 1 cái favorite như cái books
-                set(ref(dbrt, `Favorites/${item.id}`), item)
-                alert("Successfully added to favorites")
-                console.log(item)
+                remove(ref(dbrt, `Favorites/${item.id}`))
+                alert("Successfully deleted")
+                location.reload()
             })
 
-            // function add To Card:  
-            btnAddToCard.addEventListener("click", () => {
-                // add vào firebase 1 cái card như cái Books
-                set(ref(dbrt, `Cart/${item.id}`), item)
-                alert("Successfully added to cart")
-                console.log(item)
-            })
+            
         })
   } else {
     console.log("No data available");
