@@ -20,11 +20,11 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+ const app = initializeApp(firebaseConfig);
+ const analytics = getAnalytics(app);
 
-const dbrt = getDatabase(app);
-const refDb = ref(dbrt)
+ const dbrt = getDatabase(app);
+ const refDb = ref(dbrt)
 const form = document.querySelector(".formLogin")
 const btnGetUserid = document.querySelector(".get_user_by_id")
 form.addEventListener("submit", (e) => {
@@ -53,20 +53,8 @@ const writeUserData = (form) => {
 }
 }
 
-const readUserData = async () => {
-  try {
-    const snapshot = await get(refDb, "user")
-    if (snapshot.exists()) {
-      const { user } = snapshot.val()
-      console.log(user)
-    } else {
-      console.log("No data available")
-    }
-  } catch (error) {
-    console.log(error)
-  }
-}
 
-readUserData()
 
-export { app }
+
+
+export default { app, refDb, dbrt, analytics }

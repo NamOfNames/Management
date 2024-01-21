@@ -6,6 +6,7 @@
     <!-- Link css -->
     <link rel="stylesheet" href="../../../global-style.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../Home/style.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -29,6 +30,39 @@
     <title>Container</title>
   </head>
   <body>
+    <header>
+      <div class="head">
+        <div class="icon-home">
+          <i class="fa-solid fa-house"></i>
+        </div>
+        <h4>Trang quản lý tài khoản</h4>
+        <div class="Lo/Re">
+          <a href="../Authentication/Login/index.html" id="loginbutton"><i class="fa-solid fa-user"></i> Login</a> /
+          <a href="../Authentication/Register/index.html" id="registerbutton">Register <i class="fa-solid fa-user"></i></a>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="accinfo">
+        <a href="AccInfo/index.html">
+          <img src="../../../assets/imgs/account.png" alt="">
+          <h3>Thông tin tài khoản</h3>
+        </a>
+      </div>
+      <div class="favorites">
+        <a href="Favorites/index.html">
+        <img src="../../../assets/imgs/star.png" alt="">
+        <h3>Danh sách yêu thích</h3>
+      </a>
+      </div>
+      <div class="shoppingcart">
+        <a href="Cart/index.html">
+        <img src="../../../assets/imgs/cart.png" alt="">
+        <h3>Giỏ hàng</h3>
+      </a>
+      </div>
+    </div>
+    <script src="checklogin1.js"></script>
     <script type="module" src="main.js"></script>
     <script type="module" src="../../../global-main.js"></script>
   </body>

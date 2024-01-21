@@ -23,11 +23,11 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-const dbrt = getDatabase(app);
+export const dbrt = getDatabase(app);
 const refDb = ref(dbrt)
 const form = document.querySelector(".formLogin")
 const btnGetUserid = document.querySelector(".get_user_by_id")
 
 
 
-export { app }
+export { app, refDb }
