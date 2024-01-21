@@ -17,6 +17,7 @@
   padding-top: 4px;
 }
 header {
+  width: 100%;
   background-color: var(--main-color);
 }
 .lenh:hover {
@@ -34,6 +35,7 @@ header {
   padding-top: 4px;
 }
 .head {
+  width: 100%;
   padding-top: 10px;
   height: 45px;
   background-color: #c8eae3;
@@ -57,7 +59,7 @@ header {
   position: absolute;
   cursor: pointer;
 }
-.icon-shopping{
+.icon-shopping {
   position: absolute;
   cursor: pointer;
   margin-left: 220px;
@@ -70,6 +72,8 @@ header {
 .img {
   height: 250px;
   width: 175px;
+  border-radius: 5px;
+
 }
 .text-top {
   margin-left: 65px;
@@ -105,6 +109,7 @@ header {
 .img-prd {
   height: 250px;
   width: 175px;
+  border-radius: 5px;
 }
 .prd1 h5 {
   margin-top: 10px;
@@ -171,45 +176,47 @@ footer img {
   filter: brightness(50%);
 }
 footer h4 {
-    font-family: 'Pacifico', cursive;
-    color: white;
+  font-family: "Pacifico", cursive;
+  color: white;
   position: absolute;
   margin-top: -260px;
   margin-left: 30px;
 }
 .email {
-    font-family: 'Pacifico', cursive;
-    color: white;
+  font-family: "Pacifico", cursive;
+  color: white;
   position: absolute;
   margin-top: -220px;
   margin-left: 30px;
 }
 .sđt {
-    font-family: 'Pacifico', cursive;
-    color: white;
+  font-family: "Pacifico", cursive;
+  color: white;
   position: absolute;
   margin-top: -190px;
   margin-left: 30px;
 }
 .address {
-    font-family: 'Pacifico', cursive;
-    color: white;
+  font-family: "Pacifico", cursive;
+  color: white;
   position: absolute;
   margin-top: -160px;
   margin-left: 30px;
 }
-.img-product{
-    width: 320px;
-    height: 450px;
-    padding-right: 30px;
+.img-product {
+  border-radius: 10px;
+  width: 320px;
+  height: 450px;
+  padding-right: 30px;
 }
-.present{
-    width: 900px;
-    height: 650px;
-    display: flex;
-    flex-direction: row;
-    margin-left: 20px;
-    margin-top: 50px;
+.present {
+  margin-top: 10px;
+  width: 1170px;
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-top: 50px;
 }
 
 .containerBtn {
@@ -223,22 +230,22 @@ footer h4 {
     display: flex;
     flex-direction: column;
 }
-.btn-add{
-    font-family: 'Patrick Hand', cursive;
-    width: 150px;
-    height: 40px;
-    border: 1.5px solid green;
-    border-radius: 10px;
-    color: white;
-    background-color: green;
-    margin-left: 30px;
+.btn-add {
+  font-family: "Patrick Hand", cursive;
+  width: 150px;
+  height: 40px;
+  border: 1.5px solid green;
+  border-radius: 10px;
+  color: white;
+  background-color: green;
+  margin-left: 30px;
 }
-.icon-before{
-    color: white;
+.icon-before {
+  color: white;
 }
-.add-to-cart{
-    display: flex;
-    flex-direction: row;
+.add-to-cart {
+  display: flex;
+  flex-direction: row;
 }
 
 
