@@ -2,23 +2,11 @@
   color: black;
   text-decoration: none;
 }
-.command {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-bottom: 10px;
-}
-.shortcommand {
-  width: 100px;
-  height: 30px;
-  border-radius: 15px;
-  text-align: center;
-  padding-top: 4px;
-}
+
+
 header {
   width: 100%;
-  background-color: var(--main-color);
+  background-color: var(--white);
 }
 .lenh:hover {
   background-color: var(--phu-color);
@@ -39,9 +27,45 @@ header {
   height: 45px;
   background-color: #c8eae3;
   display: flex;
-  justify-content: space-around;
 }
-.sreach {
+.head .icon{
+  display: flex;
+  flex-direction: column;
+  margin-left: 675px;
+}
+.head h2{
+  margin-left: 20px;
+}
+.Lo-Re{
+  margin-top: -26px;
+}
+.icon-product{
+  margin-left: 280px;
+  margin-top: -21px;
+  cursor: pointer;
+}
+.icon-menu{
+  margin-left: -200px;
+  margin-top: -24px;
+  cursor: pointer;
+}
+.icon-instagram{
+  margin-left: 350px;
+  margin-top: -24px;
+  cursor: pointer;
+}
+.icon-facebook{
+  margin-left: 400px;
+  margin-top: -24px;
+  cursor: pointer;
+}
+.icon-instagram :hover{
+  color:#9b51e0;
+}
+.icon-facebook :hover{
+  color:#0693e3;
+}
+/* .sreach {
   background-color: #b6d9d2;
   width: 300px;
   height: 30px;
@@ -50,16 +74,16 @@ header {
 }
 .sreach::placeholder {
   padding-left: 1px;
-  /* color: var(--white); */
 }
 .icon-sreach {
   padding-top: 4.5px;
   padding-left: 4.5px;
   position: absolute;
   cursor: pointer;
-}
+} */
+
 .icon-shopping {
-  position: absolute;
+  /* position: absolute; */
   cursor: pointer;
   margin-left: 220px;
   margin-top: 3px;
@@ -71,29 +95,7 @@ header {
 .img {
   height: 250px;
   width: 175px;
-  border-radius: 5px;
-
-}
-.text-top {
-  margin-left: 65px;
-  margin-top: 10px;
-  color: red;
-}
-.text-top2 {
-  color: green;
-}
-.text-top3 {
-  color: #cdcc00;
-}
-.list-3-top {
-  display: flex;
-  justify-content: space-around;
-}
-.top2 {
-  margin-top: 125px;
-}
-.top3 {
-  margin-top: 190px;
+  border-radius: 8px;
 }
 .icon-home {
   cursor: pointer;
@@ -105,6 +107,19 @@ header {
 .new-product h3 {
   margin-left: 10px;
 }
+.star{
+  padding-left: 38px;
+}
+.star i {
+  color: black;
+  width: 6px;
+  padding-right: 17px;
+}
+.price{
+  color: gray;
+  padding-left: 38px;
+  padding-bottom: 5px;
+}
 .img-prd {
   height: 250px;
   width: 175px;
@@ -115,33 +130,10 @@ header {
   margin-left: 46px;
   cursor: pointer;
 }
-.img-prd:hover {
-  transform: scale(0.9);
-}
 .list-newbooks {
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
-}
-.prd2 h5 {
-  margin-top: 10px;
-  margin-left: 46px;
-  cursor: pointer;
-}
-.prd3 h5 {
-  margin-top: 10px;
-  margin-left: 46px;
-  cursor: pointer;
-}
-.prd4 h5 {
-  margin-top: 10px;
-  margin-left: 46px;
-  cursor: pointer;
-}
-.prd5 h5 {
-  margin-top: 10px;
-  margin-left: 46px;
-  cursor: pointer;
 }
 .cheap-product h3 {
   margin-top: 50px;
@@ -196,9 +188,9 @@ footer h4 {
   margin-left: 30px;
 }
 .img-product {
-  border-radius: 10px;
   width: 320px;
   height: 450px;
+  border-radius: 10px;
   padding-right: 30px;
 }
 .present {
@@ -211,6 +203,7 @@ footer h4 {
   margin-top: 50px;
 }
 .book-description {
+  padding-top: 20px;
   width: 100%;
   height: 450px;
   display: flex;
@@ -249,10 +242,40 @@ footer h4 {
   outline: 0;
 }
 .add-to-cart span {
-
   font-size: 25px;
   padding: 0 10px;
   cursor: pointer;
   color: #0052cc;
   user-select: none;
+}
+.icon-heart1 {
+  color: white;
+  position: absolute;
+  cursor: pointer;
+  margin-top: -290px;
+  margin-left: 10px;
+}
+.icon-heart2 {
+  color: white;
+  position: absolute;
+  cursor: pointer;
+  margin-top: -290px;
+  margin-left: 10px;
+}
+.icon-heart3 {
+  color: white;
+  position: absolute;
+  cursor: pointer;
+  margin-top: -290px;
+  margin-left: 10px;
+}
+.icon-heart {
+  color: white;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: -165px;
+}
+.new-product {
+  margin-top: 40px;
 }
