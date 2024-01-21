@@ -25,6 +25,7 @@ header {
   transform: scale(1.1);
   color: lightsteelblue;
 }
+
 .longcommand {
   width: 120px;
   height: 30px;
@@ -114,9 +115,16 @@ header {
   transform: scale(0.9);
 }
 .list-newbooks {
-  margin-top: 20px;
-  display: flex;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
   justify-content: space-around;
+}
+
+.containerCardProduct{
+  margin: 30px;
+  
 }
 .prd2 h5 {
   margin-top: 10px;
@@ -203,6 +211,11 @@ footer h4 {
     margin-left: 20px;
     margin-top: 50px;
 }
+
+.containerBtn {
+  display: flex;
+  justify-content: space-around;
+}
 .book-description{
     width: 900px;
     height: 450px;
@@ -226,4 +239,10 @@ footer h4 {
 .add-to-cart{
     display: flex;
     flex-direction: row;
+}
+
+
+.numbercart {
+  background-color: red;
+  border-radius: 50px;
 }
