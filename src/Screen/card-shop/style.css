@@ -1,0 +1,57 @@
+
+.list-shoppingcard{
+    color: black;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    width: 750px;
+    height: 400px;
+    margin-left: 250px;
+    overflow:auto;
+    box-shadow: -3px 6px 4px black;
+}
+.title{
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding-top: 10px;
+    width: 750px;
+    margin-top: 80px;
+    margin-left: 250px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid #434b54;
+    box-shadow: -3px -6px 4px black;
+}
+.prd-shoppingcard{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    border-bottom: 1.5px solid #434b54;
+    padding-bottom: 20px;
+}
+.prd-shoppingcard img{
+    width: 70px;
+    height: 90px;
+    border: black solid 1px;
+    margin-top: -30px;
+}
+.icon-dele{
+    cursor: pointer; 
+}
+.icon-heart6{
+    cursor: pointer;  
+}
+.prd-shoppingcard button{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #E1E8EE;
+    border: #E1E8EE 1px solid; 
+}
+.total-money {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+}
+.vaule-price-all-prd{
+    margin-left: 545px;
+}

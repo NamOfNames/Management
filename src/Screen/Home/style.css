@@ -1,5 +1,4 @@
 * {
-  color: black;
   text-decoration: none;
 }
 
@@ -8,7 +7,7 @@ header {
   width: 100%;
   background-color: var(--white);
 }
-.lenh:hover {
+/* .lenh:hover {
   background-color: var(--phu-color);
   text-decoration: none;
   transform: scale(1.1);
@@ -21,7 +20,7 @@ header {
   border-radius: 15px;
   text-align: center;
   padding-top: 4px;
-}
+} */
 .head {
   width: 100%;
   padding-top: 10px;
@@ -32,39 +31,56 @@ header {
 .head .icon{
   display: flex;
   flex-direction: column;
-  margin-left: 675px;
+  margin-left: 650px;
 }
 .head h2{
+  margin-top: -2px;
   margin-left: 20px;
 }
 .Lo-Re{
-  margin-top: -26px;
+  position: absolute;
 }
 .icon-product{
-  margin-left: 280px;
-  margin-top: -21px;
+  position: absolute;
+  margin-left: 260px;
   cursor: pointer;
 }
+.icon-heart{
+  margin-left: -167px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 9px;
+  
+}
 .icon-menu{
-  margin-left: -200px;
-  margin-top: -24px;
+  position: absolute;
+  margin-left: -30px;
   cursor: pointer;
 }
 .icon-instagram{
-  margin-left: 350px;
-  margin-top: -24px;
+  position: absolute;
+  margin-left: 380px;
+  cursor: pointer;
+}
+.icon-twitter{
+  position: absolute;
+  margin-left: 410px;
   cursor: pointer;
 }
 .icon-facebook{
-  margin-left: 400px;
-  margin-top: -24px;
+  position: absolute;
+  margin-left: 440px;
   cursor: pointer;
 }
 .icon-instagram :hover{
-  color:#9b51e0;
+  color: #9b51e0;
 }
 .icon-facebook :hover{
-  color:#0693e3;
+  color:#4054B2;
+}
+.icon-twitter :hover{
+  color:#6EC1E4;
 }
 /* .sreach {
   background-color: #b6d9d2;
@@ -84,9 +100,9 @@ header {
 } */
 
 .icon-shopping {
-  /* position: absolute; */
+  position: absolute;
   cursor: pointer;
-  margin-left: 220px;
+  margin-left: 320px;
   margin-top: 3px;
 }
 .sreach-bar {
@@ -107,6 +123,7 @@ header {
 }
 .new-product h3 {
   margin-left: 10px;
+  margin-top: 40px;
 }
 .star{
   padding-left: 38px;
@@ -135,7 +152,6 @@ header {
   margin: 20px;
   display: grid;
   grid-template-columns: auto auto auto auto;
-
   justify-content: space-around;
 }
 
@@ -143,33 +159,14 @@ header {
   margin: 30px;
   
 }
-.prd2 h5 {
-  margin-top: 10px;
-  margin-left: 46px;
-  cursor: pointer;
-}
-.prd3 h5 {
-  margin-top: 10px;
-  margin-left: 46px;
-  cursor: pointer;
-}
-.prd4 h5 {
-  margin-top: 10px;
-  margin-left: 46px;
-  cursor: pointer;
-}
-.prd5 h5 {
-  margin-top: 10px;
-  margin-left: 46px;
-  cursor: pointer;
-}
 .cheap-product h3 {
   margin-top: 50px;
   margin-left: 10px;
 }
 .list-cheapbooks {
-  margin-top: 20px;
-  display: flex;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   justify-content: space-around;
 }
 #see-more {
@@ -259,9 +256,165 @@ footer h4 {
   display: flex;
   flex-direction: row;
 }
-
-
+.up{
+  cursor: pointer;
+}
+.down{
+  cursor: pointer;
+}
+.quantity-value{
+  width: 50px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+}
 .numbercart {
   background-color: red;
   border-radius: 50px;
 }
+.aboutus button {
+  background-color: #D1BA33;
+  border: #D1BA33;
+  height: 50px;
+  width: 150px;
+  color: white;
+  margin-left: 100px;
+}
+.aboutus{
+  margin-top: 150px;
+  margin-left: 30px;
+  height: 250px;
+  width: 550px;
+  margin-bottom: 150px;
+}
+.aboutus p {
+  color: #545657;
+}
+.aboutus h5{
+  color: #545657;
+}
+.imgaboutus{
+  height: 450px;
+  width: 550px;
+  margin-left: 550px;
+  margin-top: -20px;
+  position: absolute;
+}
+.imgaboutus .img2{
+  position: absolute;
+  margin-top: 120px;
+  height: 250px;
+  width: 300px;
+}
+.img1{
+  margin-left: 180px;
+  margin-top: -50px;
+  height: 450px;
+  width: 350px;
+}
+.see-more{
+  width: 200px;
+  height: 50px;
+  background-color: #1D1E21;
+  border: #1D1E21;
+  color: white;
+}
+.blog{
+  margin-top: 50px;
+  background-color: #efeeee;
+}
+.blog h1{
+  text-align: center;
+}
+.title-news{
+  padding-top: 50px;
+  text-align: center;
+}
+.vacation img{
+  height: 300px;
+  width: 400px;
+  cursor: pointer;
+}
+.vacation{
+  height: 590px;
+  width: 400px;
+}
+.vacation span{
+  padding: 2px 15px;
+  border: 1px solid #D1BA33;
+  background-color: #D1BA33;
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  margin-left: -380px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.text-intr-news{
+  margin-left: 13px;
+  display: flex;
+  flex-direction: column;
+}
+.date-up{
+  cursor: pointer;
+}
+.text-intr-news h3{
+  cursor: pointer;
+}
+.date-up b {
+  font-size: 60px;
+}
+.month{
+  position: absolute;
+  margin-top: -28px;
+}
+.text-intr{
+  margin-left: 50px;
+  margin-top: -120px;
+}
+.text-intr p {
+  margin-top: 10px;
+  color: #545657;
+  margin-left: 20px;
+}
+.news{
+  margin-top: 40px;
+  height: 590px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.start-day img {
+  height: 200px;
+  width: 200px;
+}
+.start-day{
+  display: flex;
+  width: 702px;
+}
+.date-up-oldnews{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.date-up-oldnews p{
+  margin-left: 20px;
+  cursor: pointer;
+}
+.month-old {
+  margin-right: -16px;
+  color: #8F9092;
+}
+.date-up-oldnews :hover {
+  color: #D1BA33;
+}
+.text-intr-old{
+  margin-top: -20px;
+}
+.old-news{
+  display: grid;
+}
+
+
+
+

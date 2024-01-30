@@ -29,33 +29,42 @@
 <body>
     <header>
         <div class="head">
-            <div class="icon-home">
-                <i class="fa-solid fa-house"></i>
+          <h2>Tên</h2>
+          <!-- <div class="sreach-bar">
+            <input type="" placeholder="Nhập tên sách bạn muốn tìm..." class="sreach">
+            <div class="icon-sreach">
+              <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <div class="sreach-bar">
-                <input type="" placeholder="Nhập tên sách bạn muốn tìm..." class="sreach">
-                <div class="icon-sreach">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>
+          </div> -->
+          <div class="icon">
             <div class="icon-shopping">
-                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="../card-shop/index.html"><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+    
+            <div class="Lo-Re">
+              <a href="#"><i class="fa-solid fa-user"></i> Login</a> /
+              <a href="#">Register <i class="fa-solid fa-user"></i></a>
             </div>
-            <div class="Lo/Re">
-                <a href="#"><i class="fa-solid fa-user"></i> Login</a> /
-                <a href="#">Register <i class="fa-solid fa-user"></i></a>
+            <div class="icon-menu">
+              <i class="fa-solid fa-bars"></i>
             </div>
+            <div class="icon-product">
+              <i class="fa-solid fa-book"></i>
+            </div>
+            <div class="icon-instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="icon-facebook">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="icon-twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+          </div>
         </div>
         <div class="p1">
-            <h1>Tên</h1>
-            <div class="command">
-                <div class="shortcommand lenh"><a href="#">Product</a></div>
-                <div class="shortcommand lenh"><a href="#">News</a></div>
-                <div class="longcommand lenh"><a href="#">Contact us</a></div>
-                <div class="longcommand lenh"><a href="#">About us</a></div>
-            </div>
         </div>
-    </header>
+      </header>
 
     <div class="present">
         <div>
@@ -78,7 +87,7 @@
             <div class="add-to-cart">
                 <div class="quantity">
                     <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                    <input type="text" value="1">
+                    <input type="text" value="1" class="quantity-value">
                     <span class="up" onClick='increaseCount(event, this)'>+</span>
                 </div>
                 <button class="btn-add"><i class="fa-solid fa-cart-shopping icon-before"></i> ADD TO CART</button>
