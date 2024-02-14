@@ -1,44 +1,214 @@
-.imgshop{
-    position: absolute;
-    filter: brightness(55%);
+.imgshop {
+  position: absolute;
+  filter: brightness(55%);
 }
-.imgshop img{
-    width: 1250px;
-    height: 300px;
+.imgshop img {
+  width: 1250px;
+  height: 300px;
 }
-.title{
-    color: white;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 1250px;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
+.sreach-bar input{
+  height: 40px;
+}
+.title {
+  color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 1250px;
+  height: 300px;
+  justify-content: center;  align-items: center;
+}
+.type {
+  margin-top: 300px;
+  margin-left: 30px;
+}
+.icon-search {
+  position: absolute;
+  margin-top: 14px;
+  margin-left: 10px;
+}
+.type input {
+  width: 300px;
+  height: 40px;
+  padding-left: 40px;
+}
+.type h5 {
+  margin-bottom: 15px;
+}
+.genres {
+  margin-top: 50px;
+  padding-bottom: 40px;
+}
+.checkbox-genres {
+  display: flex;
+  flex-direction: column;
+}
+.lns-checkbox {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px 7px 5px 7px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.lns-checkbox span {
+  color: #545657;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.lns-checkbox input[type="checkbox"] {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.lns-checkbox input[type="checkbox"]:checked + span::after {
+  background-color: black;
+}
+.lns-checkbox input[type="checkbox"]:checked {
+  color: black;
+}
+.lns-checkbox input[type="checkbox"]:focus ::before {
+  border-color: black;
+}
+.lns-checkbox span::before {
+  content: "";
+  display: inline-block;
+  border-radius: 3px;
+  margin-right: 8px;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #8F9092;
+}
+.lns-checkbox span::after {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-radius: 3px;
+  background-color: transparent;
+  left: 3.5px;
+  position: absolute;
+}
+.book-category{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.price-type{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.rate{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.star-rate i {
+  font-size: 12px;
+  padding-left: 5px;
 }
 .type{
-    margin-top: 350px;
-    margin-left: 30px;
+  height: 1000px;
+  width: 400px;
+  padding-left: 30px;
+  padding-top: 30px;
+  background-color: white;
 }
-.icon-search{
-    position: absolute;
-    margin-top: 14px;
-    margin-left: 10px;
+.type-prd{
+  background-color: #eaeaea;
+  height: 100%;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
 }
-.type input{
-    width: 300px;
-    padding-left: 40px;
+.author{
+  color: gray;
+  margin-top: 10px;
 }
-.type h5{
-    margin-bottom: 15px;
+.price-prd {
+  color: gray;
+  margin-top: 4px;
 }
-.genres{
-    margin-top: 50px;
+.star-prd i {
+  margin-top: 4px;
+  font-size: 12px;
+  padding-left: 5px;
 }
-.checkbox-genres{
-    display: flex;
-    flex-direction: column;
+.prd h5{
+  margin-top: 10px;
 }
-.checkbox-genres span{
-    margin-bottom: 20px;
+.prd{
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 350px;
+}
+#footer-prd{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: -5px;
+  text-align: center;
+}
+.footer-text p{
+  cursor: pointer;
+  font-family: "Pacifico", cursive;
+}
+.footer-text b{
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+}
+#this-web{
+  color: #D1BA33;
+}
+.web-shop{
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.box{
+  width: 40px;
+  height:40px;
+  border: #eaeaea solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+.box-face{
+  margin-left: 80px;
+}
+.box-face :hover{
+  color: #4054B2;
+}
+.box-ins :hover{
+  color: #9b51e0;
+}
+.box-tw :hover{
+  color:#6EC1E4;
+}
+.box-inter :hover{
+  color: #f78da7;
+}
+.box-icon{
+  display: flex;
+  justify-content: center;
+
+}
+.web-shop p a {
+  color: white;
+  font-family: "Pacifico", cursive;
 }
