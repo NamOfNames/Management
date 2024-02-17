@@ -122,5 +122,14 @@ const getListProduct = async () => {
  
 }
 getListProduct()
-
-
+//  hiệu ứng trái tim 
+const iconheart4 = document.querySelector('#icon-heart4');
+const iconheart5 = document.querySelector('#icon-heart5');
+iconheart4.addEventListener('click', () => {
+    iconheart4.style.color = '#DC143C';
+    iconheart4.style.transition = '.5s ease';
+});
+iconheart5.addEventListener('click', () => {
+    iconheart5.style.color = '#DC143C';
+    iconheart5.style.transition = '.5s ease';
+});

@@ -3,13 +3,16 @@
     padding: 0;
 }
 
-.buttonLogin {
-    color: var(--white);
-}
 
+.formLogin h1 {
+    font-family: "Pacifico", cursive;
+    color: rosybrown;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
 .formLogin {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: 100vw;
     height: 100vh;
@@ -17,15 +20,92 @@
     
 }
 .formLogin input {
-    width: 50vw;
-    height: 50px;
-    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: 0;
+    padding: 3px 3px 0px 40px;
 } 
+.formLogin i {
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.formLogin input {
+    border-bottom: 1px solid #eaeaea;
+}
 .formLogin button {
+    margin-top: 50px;
     width: 20vw;
     height: 40px;
     border-radius: 10px;
+    border: 1px solid #8F9092;
+    cursor: pointer;
+    background-color: rgb(235, 203, 203);
+    font-family: "Pacifico", cursive;
 } 
-.formLogin * {
-    margin-bottom: 10px;
-}
+.lns-checkbox {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px 7px 5px 7px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .lns-checkbox span {
+    color: #545657;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .lns-checkbox input[type="checkbox"] {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+  .lns-checkbox input[type="checkbox"]:checked + span::after {
+    background-color: #00d084;
+
+  }
+  .lns-checkbox input[type="checkbox"]:checked {
+    color: black;
+  }
+  .lns-checkbox input[type="checkbox"]:focus ::before {
+    border-color: black;
+  }
+  .lns-checkbox span::before {
+    content: "";
+    display: inline-block;
+    border-radius: 3px;
+    margin-right: 8px;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #8F9092;
+  }
+  .lns-checkbox span::after {
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-radius: 3px;
+    background-color: transparent;
+    left: 4px;
+    position: absolute;
+  }
+  img {
+    width: 400px;
+    margin-left: 20px;
+  }
+  .login{
+    display: flex;
+    flex-direction: column;
+  }

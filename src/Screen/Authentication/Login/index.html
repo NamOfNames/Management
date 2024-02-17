@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
-
+    <!-- Link font awesome -->
+    <script src="https://kit.fontawesome.com/20d71f8f30.js" crossorigin="anonymous"></script>
+    <!-- Link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
 </head>
+
 <body>
-    
+
 
     <form name="form_login" class="formLogin">
-        <h1>Login</h1>
-        <input type="email" name="email" class="inputEmail" placeholder="Enter Email" required>
-        <input type="password" name="password" class="inputPassword" placeholder="Enter Password" required>
-        <button class="buttonLogin" type="submit">Login</button>
+        <div class="login">
+            <h1>Login</h1>
+            <div class="inp-email">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" name="email" class="inputEmail" placeholder="Enter Email" required>
+            </div>
+            <div class="inp-pass">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="password" class="inputPassword" placeholder="Enter Password" required>
+            </div>
+            <label class="lns-checkbox">
+                <input type="checkbox">
+                <span>Remember me</span>
+            </label>
+            <button class="buttonLogin" type="submit">Login</button>
+        </div>
+        <img src="../../../../assets/imgs/undraw_file_sync_ot38.svg" alt="">
     </form>
+
     <script src="main.js" type="module"></script>
     <script src="../checklogin2.js"></script>
 
 </body>
+
 </html>
