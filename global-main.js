@@ -25,36 +25,12 @@ const firebaseConfig = {
 
  const dbrt = getDatabase(app);
  const refDb = ref(dbrt)
-const form = document.querySelector(".formLogin")
-const btnGetUserid = document.querySelector(".get_user_by_id")
-form.addEventListener("submit", (e) => {
-  e.preventDefault()
-  writeUserData(e.target)
-})
-
-const writeUserData = (form) => {
-  const user = {
-    id: Math.floor(Math.random() * 100000),
-    name: form.fullName.value,
-    email: form.email.value,
-    phoneNumber: form.phoneNumber.value,
-    age: form.age.value,
-  }
-  try {
-  set(ref(dbrt, `user/${user.id}`), user)
-  
-
-  form.fullName.value = ""
-  form.email.value = ""
-  form.phoneNumber.value = ""
-  form.age.value = ""
-} catch (error) {
-
-}
-}
 
 
 
 
 
-export default { app, refDb, dbrt, analytics }
+
+
+
+export  { app, refDb, dbrt, analytics }

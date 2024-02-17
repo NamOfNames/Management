@@ -1,15 +1,17 @@
 import { set, ref, get,child, remove } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
 import { refDb, dbrt } from "../../../../main.js";
-
+import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { app } from "../../global-main.js"
 const addfav = document.querySelector(".addfav")
 const addcart = document.querySelector(".addcart")
-
+const activeEmail = localStorage.getItem("activeEmail")
 const listNewwork2 = document.querySelector(".favcontent");
-
+const auth = getAuth(app);
+const currentuser = auth.currentUser
 // viết get list từ firebase đi 
 
 const getListProduct = async () => {
-   const snapshot  = await get(child(refDb, "Favorites"));
+   const snapshot  = await get(child(refDb, `Favorites/`));
    if (snapshot.exists()) {
        const data = snapshot.val();
         const value = Object.values(data)
@@ -33,7 +35,7 @@ const getListProduct = async () => {
             containerBtn.classList.add("containerBtn");
 
             containerBtn.appendChild(btnFavorite)
-            containerBtn.appendChild(btnAddToCard)
+            // containerBtn.appendChild(btnAddToCard)
 
             containerCardProduct.appendChild(nameProduct)
             containerCardProduct.appendChild(descriptionProduct)

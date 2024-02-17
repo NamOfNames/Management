@@ -3,13 +3,13 @@ import { refDb, dbrt } from "../../../../main.js";
 
 const addfav = document.querySelector(".addfav")
 const addcart = document.querySelector(".addcart")
-
+const activeEmail = localStorage.getItem("activeEmail")
 const listNewwork2 = document.querySelector(".cartcontent");
 
 // viết get list từ firebase đi 
 
 const getListProduct = async () => {
-   const snapshot  = await get(child(refDb, "Cart"));
+   const snapshot  = await get(child(refDb, `Cart/${activeEmail}`));
    if (snapshot.exists()) {
        const data = snapshot.val();
         const value = Object.values(data)
@@ -23,7 +23,7 @@ const getListProduct = async () => {
             const btnAddToCard = document.createElement("button")
 
             nameProduct.innerText = item.name
-            descriptionProduct.innerText = item.description
+            
             
 
             btnFavorite.innerText = "Delete"
@@ -33,7 +33,7 @@ const getListProduct = async () => {
             containerBtn.classList.add("containerBtn");
 
             containerBtn.appendChild(btnFavorite)
-            containerBtn.appendChild(btnAddToCard)
+            // containerBtn.appendChild(btnAddToCard)
 
             containerCardProduct.appendChild(nameProduct)
             containerCardProduct.appendChild(descriptionProduct)
