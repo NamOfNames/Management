@@ -39,8 +39,8 @@
         </div>
 
         <div class="Lo-Re">
-          <a href="#"><i class="fa-solid fa-user"></i> Login</a> /
-          <a href="#">Register <i class="fa-solid fa-user"></i></a>
+          <a id="loginbutton" href="../Authentication/Login/index.html"><i class="fa-solid fa-user"></i> Login</a> /
+          <a id="registerbutton" href="../Authentication/Logout/index.html">Register <i class="fa-solid fa-user"></i></a>
         </div>
         <div class="icon-menu">
           <i class="fa-solid fa-bars"></i>
@@ -63,6 +63,7 @@
   <div class="new-product">
     <h3>New Books</h3>
     <div class="list-newbooks New-Books">
+      
       <div class="prd1">
         <img src="../../../assets/imgs/imgblog.jpg" alt="" class="img-prd">
         <i class="fa-solid fa-heart icon-heart" id="icon-heart4"></i>
@@ -103,6 +104,10 @@
       </div>
       <a href="#" id="see-more"> See more --> </a>
     </div>
+    <div class="otherbooks ">
+      <h3>Other Books</h3>
+      <div class="list-newbooks-1"></div>
+    </div>
     <footer>
 
       <img src="../../../assets/imgs/5963.webp" alt="">
@@ -116,6 +121,7 @@
     </footer>
     <script type="module" src="main.js"></script>
     <script type="module" src="../../../global-main.js"></script>
+    <script src="../Authentication/checklogin1.js"></script>
 </body>
 
 </html>
