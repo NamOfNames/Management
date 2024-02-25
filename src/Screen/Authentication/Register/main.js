@@ -6,7 +6,7 @@ const eventFormLogin = document.querySelector(".formLogin")
 const inputEmail = document.querySelector(".inputEmail")
 const inputPassword = document.querySelector(".inputPassword")
 const auth = getAuth(app)
-
+const dbrt = getDatabase(app);
 
 console.log("auth", auth);
 const form = document.querySelector(".formLogin")
@@ -37,7 +37,7 @@ form.addEventListener("submit", (e) => {
   createUserWithEmailAndPassword(auth, inputEmail.value, inputPassword.value)
         .then((userCredential) => {
           const user = userCredential.user;
-  
+          
           alert("message success");
           console.log(user);
   

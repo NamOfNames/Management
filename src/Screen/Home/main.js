@@ -1,5 +1,5 @@
 import { set, ref, get,child } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 import { refDb, dbrt } from "../../../main.js";
 import { app } from "../../../global-main.js"
 
@@ -11,14 +11,23 @@ const auth = getAuth();
 const currentuser = auth.currentUser
 // viết get list từ firebase đi 
 function handleAddToFav(item) {
-    
-    // add vào firebase 1 cái favorite như cái books
-    set(ref(dbrt, `Favorites/${currentuser.uid}/${item.id}`), item)
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+          // User is signed in, see docs for a list of available properties
+          // https://firebase.google.com/docs/reference/js/auth.user
+          const uid = user.uid;
+          // add vào firebase 1 cái favorite như cái books
+    set(ref(dbrt, `Favorites/${uid}/${item.id}`), item)
     alert("Successfully added to favorites")
     console.log(item)
+          // ...
+        } else {
+          // User is signed out
+          // ...
+        }
+      });
     
 
-    console.log(item)
 }
 
 // function handleAddToCart(item) {
@@ -29,6 +38,8 @@ function handleAddToFav(item) {
 //     console.log(item)
 
 // }
+
+
 
 const getListProduct = async () => {
    const snapshot  = await get(child(refDb, "Books"));
@@ -73,10 +84,22 @@ const getListProduct = async () => {
 
             // function add To Card:  
             btnAddToCard.addEventListener("click", () => {
-                // add vào firebase 1 cái card như cái Books
-                set(ref(dbrt, `Cart/${currentuser.uid}/${item.id}`), item)
+                onAuthStateChanged(auth, (user) => {
+                    if (user) {
+                      // User is signed in, see docs for a list of available properties
+                      // https://firebase.google.com/docs/reference/js/auth.user
+                      const uid = user.uid;
+                      // add vào firebase 1 cái card như cái Books
+                set(ref(dbrt, `Cart/${uid}/${item.id}`), item)
                 alert("Successfully added to cart")
                 console.log(item)
+                      // ...
+                    } else {
+                      // User is signed out
+                      // ...
+                    }
+                  });
+                
             })
             // listNewwork2.innerHTML += "</h5><div class=\"price\">$13.99 – $22.00</div><div class=\"star\"><i class=\"fa-solid fa-star\"></i><i class=\"fa-solid fa-star\"></i><i class=\"fa-solid fa-star\"></i><i class=\"fa-solid fa-star\"></i><i class=\"fa-solid fa-star\"></i></div>"
             // listNewwork2.innerHTML += "</div>"
