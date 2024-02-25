@@ -21,19 +21,6 @@ const writeUserData = (form) => {
   }
   try {
   set(ref(dbrt, `user/${user.id}`), user)
-  
-
-  form.fullName.value = ""
-  form.email.value = ""
-  form.phoneNumber.value = ""
-  form.age.value = ""
-} catch (error) {
-
-}
-}
-form.addEventListener("submit", (e) => {
-  e.preventDefault()
-  writeUserData(e.target)
   createUserWithEmailAndPassword(auth, inputEmail.value, inputPassword.value)
         .then((userCredential) => {
           const user = userCredential.user;
@@ -52,6 +39,19 @@ form.addEventListener("submit", (e) => {
           }
           //   viết component toast
         })
+
+  form.fullName.value = ""
+  form.email.value = ""
+  form.phoneNumber.value = ""
+  form.age.value = ""
+} catch (error) {
+
+}
+}
+form.addEventListener("submit", (e) => {
+  e.preventDefault()
+  writeUserData(e.target)
+  
 })
 
 
